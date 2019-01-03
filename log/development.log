@@ -1169,3 +1169,21 @@ Processing by ProductsController#show as HTML
   [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
   Rendered products/show.html.erb within layouts/application (0.7ms)
 Completed 200 OK in 34ms (Views: 21.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/1" for 204.10.132.7 at 2019-01-03 18:20:05 +0000
+Cannot render console from 204.10.132.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 23.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/1" for 204.10.132.7 at 2019-01-03 18:20:06 +0000
+Cannot render console from 204.10.132.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.1ms)
