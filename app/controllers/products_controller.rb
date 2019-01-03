@@ -30,7 +30,7 @@ class ProductsController < ApplicationController
     product = Product.find(params[:id])
     render json: ProductSerializer.serialize(product)
     
-        post = Post.find(params[:id])
+    product = Product.find(params[:id])
     #render json: PostSerializer.serialize(post)
     render json: post.to_json(only: [:title, :description, :id],
                               include: [ author: { only: [:name]}])
